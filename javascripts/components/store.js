@@ -1,8 +1,13 @@
+import book from '../helpers/book.js';
 import util from '../helpers/util.js';
 
 
 const makeStore = () => {
-    let domString = '<h3>Help</h3>';
+    const bookInfo = book.getBook();
+    let domString = '<h2>Our only book</h2>';
+    domString += `<h3>${bookInfo.price}`
+    domString += `<img src="${bookInfo.image} alt="book cover">`
+    domString += `<button class="btn btn-danger">Add to Cart</button>`
     util.printToDom('store-container', domString);
 };
 
