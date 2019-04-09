@@ -1,7 +1,7 @@
 const bookInfo = {
     price: 24.99,
-    title: "Fifty Shades of ChiKn",
-    image: "./assets/book.jpg"
+    title: 'Fifty Shades of ChiKn',
+    image: './assets/book.jpg'
 };
 
 const getBook = () => {
